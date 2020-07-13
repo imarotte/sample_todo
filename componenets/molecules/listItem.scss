@@ -1,0 +1,58 @@
+/*!
+ * @Copyright © 2019-2020 Isaac Marotte - All Rights Reserved
+ *
+ * This file is the sole property of its owner.
+ * Unauthorized use of this file, via any medium or form, whole or in part,
+ * is strictly prohibited without the expressed written permission of Isaac Marotte
+ *
+ * This file is proprietary and confidential
+ *
+ * Last Modified: 2020.7.12
+ */
+
+@import "../scss/colors";
+@import "../scss/constants";
+
+.item{
+  display: flex;
+  align-items: flex-start;
+  margin: 10px;
+  min-height: 45px;
+
+  textarea{
+    width: 100%;
+    resize: none;
+    border: none;
+    padding: 3px;
+
+    &:focus{
+      padding: 2px;
+      border: 1px solid $color-border;
+      border-radius: 4px;
+    }
+  }
+}
+
+.icon{
+  font-size: 25px;
+  margin-right: 10px;
+  color: $color-text;
+}
+
+.remove{
+  color: rgba(255, 0, 0, 0.4);
+  min-width: 40px;
+
+  &:hover,
+  &:focus {
+    color: red;
+  }
+}
+
+
+
+@media (min-width: $maxScreenWidth) {
+  .item{
+    min-height: auto;
+  }
+}

@@ -1,0 +1,41 @@
+/*!
+ * @Copyright © 2019-2020 Isaac Marotte - All Rights Reserved
+ *
+ * This file is the sole property of its owner.
+ * Unauthorized use of this file, via any medium or form, whole or in part,
+ * is strictly prohibited without the expressed written permission of Isaac Marotte
+ *
+ * This file is proprietary and confidential
+ *
+ * Last Modified: 2020.7.12
+ */
+
+@import "../../scss/colors";
+@import "../../scss/constants";
+
+.btnDefault {
+  padding: 8px 12px;
+  border-radius: $borderRadius;
+  border: 1px solid $color-text;
+  font-size: 1em;
+  color: $color-text;
+  background-color: $color-background-global;
+
+
+  &:hover,
+  &:focus {
+    outline: unset;
+    background-color: $color-background-global-hover;
+  }
+}
+
+.btnPrimary {
+  @extend .btnDefault;
+  background-color: $color-primary;
+  color: whitesmoke;
+
+  &:hover,
+  &:focus {
+    background-color: $color-primary-hover;
+  }
+}
